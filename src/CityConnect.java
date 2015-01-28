@@ -95,8 +95,13 @@ public class CityConnect {
 	 * alone.
 	 * ====================================================================
 	 */
-	public static void main(String[] args) {
+	public static void main(String[] args) {		
 		showToUser(WELCOME_MESSAGE);
+/*************Refactoring**************/		
+		scanCommand();
+	}
+
+	private static void scanCommand() {
 		while (true) {
 			System.out.print("Enter command:");
 			String command = scanner.nextLine();
